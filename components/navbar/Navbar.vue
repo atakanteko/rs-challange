@@ -6,7 +6,7 @@
     <div v-for="item in navItems" :key="item.id"
          class="cursor-pointer h-16 w-full flex items-center justify-center"
          :class="{'bg-[#F6F6F6]':isActive===item.id}"
-         @click="renderPage(item.id)"
+         @click="renderPage(item.id, item.url)"
     >
       <img :src="item.icon" :alt="item.id" />
     </div>
@@ -25,9 +25,9 @@ export default {
     }
   },
   methods: {
-    renderPage(id) {
+    renderPage(id, url) {
       this.isActive=id;
-      
+      this.$router.push({path: url})
     }
   },
   created() {

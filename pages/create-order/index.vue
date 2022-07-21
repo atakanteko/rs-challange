@@ -1,13 +1,17 @@
 <template>
   <div class="">
     <Container>
-      <Orders/>
+      <CreateOrder/>
     </Container>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: "index",
 }
 </script>
+
+<style scoped>
+
+</style>

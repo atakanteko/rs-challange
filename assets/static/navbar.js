@@ -6,12 +6,14 @@ export const navbar = [
   {
     id: 0,
     name: 'home',
-    icon: home
+    icon: home,
+    url: '/'
   },
   {
     id: 1,
     name: 'order',
-    icon: order
+    icon: order,
+    url: '/create-order'
   },
   {
     id: 2,
