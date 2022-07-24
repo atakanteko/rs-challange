@@ -1,4 +1,4 @@
-# rs-challenge
+# rs-challenge-app
 
 ## Build Setup
 

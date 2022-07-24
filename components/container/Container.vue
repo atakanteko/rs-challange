@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+
 
 export default {
   name: "Container",
@@ -17,11 +17,8 @@ export default {
     }
   },
   methods: {
-    ...mapMutations({
-      toggle: 'changeOrderInformationState'
-    }),
     toggle() {
-      this.$store.commit('changeOrderInformationState', this.$store.state.isOrderInformationOpen)
+      this.$store.commit('changeOrderInformationState', this.$store.getters.getOrderInformationState)
     }
   },
 }
